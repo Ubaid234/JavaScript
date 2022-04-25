@@ -1,4 +1,4 @@
-// Funtions
+// Functions
 
 function logger(){
     console.log('My name is jonas');
