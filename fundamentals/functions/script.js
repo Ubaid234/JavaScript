@@ -26,14 +26,60 @@ function rolldie () {
 //     console.log('Hi');
 // }
 
-function square (num) {
-    console.log(num * num);
-}
+// function square (num) {
+//     console.log(num * num);
+// }
 
-function sum ( x, y) {
-    console.log(x + y );
-}
+// function sum ( x, y) {
+//     console.log(x + y );
+// }
 
-function divide ( a, b) {
-    console.log ( a/b);
+// function divide ( a, b) {
+//     console.log ( a/b);
+// }
+
+// RETURN STATEMENT 
+
+// function add (x,y) {
+//     return x + y ;
+// } 
+
+// function square (x , y) {
+//     return x * y ;
+//     console.log ('All Done');
+// }
+
+// function isPurple(color) {
+//     if ( color.toLowerCase() === 'purple') {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+
+//THE ABOVE RETURN FUNCTION CAN ALSO BE WRITTEN AS:-
+// function isPurple(color) {
+//     if ( color.toLowerCase() === 'purple') {
+//         return true;
+//     } 
+//     return false;
+    
+// }
+
+// THIS CAN FURTHER BE WRITTEN AS :-
+
+// function isPurple(color) {
+//        return color.toLowerCase() === 'purple';
+//      }
+
+// AN ADVANCED VERSION OF ISPURPLE 
+
+function containsPurple (arr) {
+    for( let color of arr) {
+        if (color === 'purple' || color === 'magenta') {
+            return true;
+        }
+    }
+    return false;
 }
