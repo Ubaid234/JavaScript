@@ -285,3 +285,27 @@ btn.addEventListener('click', function() {
     alert("WHY DID U CLICK ME!")
 })
 
+// HOISTING 
+
+// console.log(animal);
+// var animal = 'YALK'
+// console.log(animal);
+
+// const shrimp = 'Harlequin Shrimp';
+// console.log(shrimp);
+
+// howl()
+// function howl() {
+//     console.log("AWoooooo")
+// }
+
+
+// hoot()
+// let hoot = function () {
+//     console.log("Hoo hooo")
+// }
+
+// console.log(howt)
+// var howt = function () {
+//     console.log("Hoo hooo")
+// }
