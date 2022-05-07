@@ -178,3 +178,31 @@ const product = function multiply(x, y) {
   return x * y;
 };
 
+// HIGHER ORDER FUNCTIONS 
+
+function add (x , y) {
+    return x + y ;
+}
+
+const subtract = function (x, y) {
+    return x - y ;
+}
+
+function multiply (x , y ) {
+    return x * y ;
+}
+
+const divide = function (x, y) {
+    return x / y ;
+}
+
+const operations = [add, subtract, multiply , divide];
+
+for( let doc of operations) {
+   let result =  doc(30,5);
+   console.log(result);
+}
+
+const thing = {
+    doSomething : multiply
+}
