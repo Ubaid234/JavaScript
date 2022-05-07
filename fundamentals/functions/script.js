@@ -268,3 +268,20 @@ const isChild = makeBetweenFunc(0,18);
 const isInNineties = makeBetweenFunc(1990, 1999);
 
 const isNiceWeather = makeBetweenFunc (60,79);
+
+// CALLBACKS
+
+// function grumps () {
+//     alert(" Gaagh go away! ")
+// }
+
+// setTimeout(function() {
+//     alert("WELCOME!");
+// }, 5000);
+
+
+const btn = document.querySelector('button');
+btn.addEventListener('click', function() {
+    alert("WHY DID U CLICK ME!")
+})
+
