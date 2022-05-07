@@ -84,7 +84,7 @@ function rolldie () {
 //   return false;
 // }
 
-// Function scope 
+// FUNCTION SCOPE  
 
 // function sand () { 
 
@@ -116,24 +116,57 @@ function rolldie () {
 
 // console.log(animal);
 
-if(true) {
-    var animal = 'zebra';
-    console.log(animal);
+// if(true) {
+//     var animal = 'zebra';
+//     console.log(animal);
+// }
+
+// console.log(animal);
+
+// [1,3,5]
+// [2,6,10]
+ 
+function doubleArr(arr){
+    const result = [];
+    for(let num of arr) {
+        let double = num * 2;
+        result.push(double);
+    }
+    return result ;
 }
 
-console.log(animal);
+// LEXICAL SCOPE
 
+// function outer () {
+//     let movie = 'Amadeus';
+//     function inner () {
+//         console.log(movie.toUpperCase())
+//     }
+//     inner();
+// }
 
+// function outer () {
+//     let movie = 'Amadeus';
+//     function inner () {
+//         let movie = 'Inception'
+//         console.log(movie.toUpperCase())
+//     }
+//     inner();
+// } 
 
+function outer () {
+    let movie = 'Amadeus';
 
-
-
-
-
-
-
-
-
+    function inner () {
+        let movie = 'Inception'
+        
+        function extraInner () {
+            console.log(movie.toUpperCase())
+        }
+        extraInner();
+    }
+    inner();
+}
 
 // FUNCTION EXPRESSIONS 
 
