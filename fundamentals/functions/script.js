@@ -154,29 +154,29 @@ function doubleArr(arr){
 //     inner();
 // } 
 
-function outer () {
-    let movie = 'Amadeus';
+// function outer () {
+//     let movie = 'Amadeus';
 
-    function inner () {
-        let movie = 'Inception'
+//     function inner () {
+//         let movie = 'Inception'
         
-        function extraInner () {
-            console.log(movie.toUpperCase())
-        }
-        extraInner();
-    }
-    inner();
-}
+//         function extraInner () {
+//             console.log(movie.toUpperCase())
+//         }
+//         extraInner();
+//     }
+//     inner();
+// }
 
 // FUNCTION EXPRESSIONS 
 
-const sum = function (x , y) {
-    return x + y;
-} 
+// const sum = function (x , y) {
+//     return x + y;
+// } 
 
-const product = function multiply(x, y) {
-  return x * y;
-};
+// const product = function multiply(x, y) {
+//   return x * y;
+// };
 
 // HIGHER ORDER FUNCTIONS 
 
@@ -206,3 +206,40 @@ for( let doc of operations) {
 const thing = {
     doSomething : multiply
 }
+
+// FUNCTION AS ARGUMENTS
+
+function callThreeTimes (f) {
+    f();
+    f();
+    f();
+}
+
+function cry() {
+    console.log("BOO HOO I'M SO SAD!");
+}
+function rage() {
+    console.log("I AM ANGRY!");
+}
+
+// callThreeTimes(cry);
+
+function repeatNTimes(action, num) {
+    for (let i = 0 ; i < num ; i++) {
+        action();
+    }
+}
+
+// repeatNTimes (cry, 23);
+
+function pickOne (f1,f2) {
+    let rand = Math.random();
+    console.log ( rand );
+    if (rand < 0.5 ) {
+        f1();
+    } else {
+        f2();
+    }
+}
+
+pickOne(cry, rage);
