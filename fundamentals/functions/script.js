@@ -107,6 +107,34 @@ function rolldie () {
 // sand();
 // water();
 
+// BLOCK SCOPE
+
+// if(true) {
+//     let animal = 'zebra';
+//     console.log(animal);
+// }
+
+// console.log(animal);
+
+if(true) {
+    var animal = 'zebra';
+    console.log(animal);
+}
+
+console.log(animal);
+
+
+
+
+
+
+
+
+
+
+
+
+
 // FUNCTION EXPRESSIONS 
 
 const sum = function (x , y) {
