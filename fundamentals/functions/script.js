@@ -86,23 +86,34 @@ function rolldie () {
 
 // Function scope 
 
-function sand () { 
+// function sand () { 
 
-   let person = 'Jerry';
-   const age = 34;
-   var color = 'white';
-   console.log(color);
+//    let person = 'Jerry';
+//    const age = 34;
+//    var color = 'white';
+//    console.log(color);
 
-}
+// }
 
-function water () {
+// function water () {
 
-    var color = 'Black'
-    const age = 85;
-    let person = 'Tom' ;
-    console.log(color);
+//     var color = 'Black'
+//     const age = 85;
+//     let person = 'Tom' ;
+//     console.log(color);
 
-}
+// }
 
-sand();
-water();
+// sand();
+// water();
+
+// FUNCTION EXPRESSIONS 
+
+const sum = function (x , y) {
+    return x + y;
+} 
+
+const product = function multiply(x, y) {
+  return x * y;
+};
+
