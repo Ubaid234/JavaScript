@@ -75,11 +75,34 @@ function rolldie () {
 
 // AN ADVANCED VERSION OF ISPURPLE 
 
-function containsPurple (arr) {
-    for( let color of arr) {
-        if (color === 'purple' || color === 'magenta') {
-            return true;
-        }
-    }
-    return false;
+// function containsPurple(arr) {
+//   for (let color of arr) {
+//     if (color === "purple" || color === "magenta") {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// Function scope 
+
+function sand () { 
+
+   let person = 'Jerry';
+   const age = 34;
+   var color = 'white';
+   console.log(color);
+
 }
+
+function water () {
+
+    var color = 'Black'
+    const age = 85;
+    let person = 'Tom' ;
+    console.log(color);
+
+}
+
+sand();
+water();
