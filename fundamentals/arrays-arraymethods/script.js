@@ -60,10 +60,19 @@ val = numbers.find(under50);
 // console.log(val);
 
 
-// forEach() 
+// forEach() Array Method
 
 const nams = [20,21,22,23,24,25,26,27,28];
 
 nams.forEach(function(nam){
   console.log( nam * 2 );
 });
+
+// MAP
+
+const texts = ['rofl', 'lol', 'omg' , 'ttyl']
+const caps = texts.map(function(t){
+  return t.toUpperCase();
+})
+
+
