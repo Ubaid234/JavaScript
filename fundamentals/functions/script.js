@@ -1,6 +1,6 @@
-function rolldie () {
-    let roll = Math.floor(Math.random()  * 4) + 1;
-    console.log (`Rolled: ${roll}`);
+function rolldie() {
+  let roll = Math.floor(Math.random() * 4) + 1;
+  console.log(`Rolled: ${roll}`);
 }
 
 // function throwDice () {
@@ -11,7 +11,6 @@ function rolldie () {
 //     rolldie();
 //     rolldie();
 // }
-
 
 // throwDice();
 
@@ -38,11 +37,11 @@ function rolldie () {
 //     console.log ( a/b);
 // }
 
-// RETURN STATEMENT 
+// RETURN STATEMENT
 
 // function add (x,y) {
 //     return x + y ;
-// } 
+// }
 
 // function square (x , y) {
 //     return x * y ;
@@ -62,9 +61,9 @@ function rolldie () {
 // function isPurple(color) {
 //     if ( color.toLowerCase() === 'purple') {
 //         return true;
-//     } 
+//     }
 //     return false;
-    
+
 // }
 
 // THIS CAN FURTHER BE WRITTEN AS :-
@@ -73,7 +72,7 @@ function rolldie () {
 //        return color.toLowerCase() === 'purple';
 //      }
 
-// AN ADVANCED VERSION OF ISPURPLE 
+// AN ADVANCED VERSION OF ISPURPLE
 
 // function containsPurple(arr) {
 //   for (let color of arr) {
@@ -84,9 +83,9 @@ function rolldie () {
 //   return false;
 // }
 
-// FUNCTION SCOPE  
+// FUNCTION SCOPE
 
-// function sand () { 
+// function sand () {
 
 //    let person = 'Jerry';
 //    const age = 34;
@@ -125,14 +124,14 @@ function rolldie () {
 
 // [1,3,5]
 // [2,6,10]
- 
-function doubleArr(arr){
-    const result = [];
-    for(let num of arr) {
-        let double = num * 2;
-        result.push(double);
-    }
-    return result ;
+
+function doubleArr(arr) {
+  const result = [];
+  for (let num of arr) {
+    let double = num * 2;
+    result.push(double);
+  }
+  return result;
 }
 
 // LEXICAL SCOPE
@@ -152,14 +151,14 @@ function doubleArr(arr){
 //         console.log(movie.toUpperCase())
 //     }
 //     inner();
-// } 
+// }
 
 // function outer () {
 //     let movie = 'Amadeus';
 
 //     function inner () {
 //         let movie = 'Inception'
-        
+
 //         function extraInner () {
 //             console.log(movie.toUpperCase())
 //         }
@@ -168,78 +167,78 @@ function doubleArr(arr){
 //     inner();
 // }
 
-// FUNCTION EXPRESSIONS 
+// FUNCTION EXPRESSIONS
 
 // const sum = function (x , y) {
 //     return x + y;
-// } 
+// }
 
 // const product = function multiply(x, y) {
 //   return x * y;
 // };
 
-// HIGHER ORDER FUNCTIONS 
+// HIGHER ORDER FUNCTIONS
 
-function add (x , y) {
-    return x + y ;
+function add(x, y) {
+  return x + y;
 }
 
 const subtract = function (x, y) {
-    return x - y ;
-}
+  return x - y;
+};
 
-function multiply (x , y ) {
-    return x * y ;
+function multiply(x, y) {
+  return x * y;
 }
 
 const divide = function (x, y) {
-    return x / y ;
-}
+  return x / y;
+};
 
-const operations = [add, subtract, multiply , divide];
+const operations = [add, subtract, multiply, divide];
 
-for( let doc of operations) {
-   let result =  doc(30,5);
-   console.log(result);
+for (let doc of operations) {
+  let result = doc(30, 5);
+  console.log(result);
 }
 
 const thing = {
-    doSomething : multiply
-}
+  doSomething: multiply,
+};
 
 // FUNCTION AS ARGUMENTS
 
-function callThreeTimes (f) {
-    f();
-    f();
-    f();
+function callThreeTimes(f) {
+  f();
+  f();
+  f();
 }
 
 function cry() {
-    console.log("BOO HOO I'M SO SAD!");
+  console.log("BOO HOO I'M SO SAD!");
 }
 function rage() {
-    console.log("I AM ANGRY!");
+  console.log("I AM ANGRY!");
 }
 
 // callThreeTimes(cry);
 
 function repeatNTimes(action, num) {
-    for (let i = 0 ; i < num ; i++) {
-        action();
-    }
+  for (let i = 0; i < num; i++) {
+    action();
+  }
 }
 
 // repeatNTimes (cry, 23);
 
-function pickOne (f1,f2) {
-    let rand = Math.random();
-    console.log ( rand );
-    if (rand < 0.5 ) {
-        f1();
-    } else {
-        f2();
-    }
+function pickOne(f1, f2) {
+  let rand = Math.random();
+  console.log(rand);
+  if (rand < 0.5) {
+    f1();
+  } else {
+    f2();
+  }
 }
 
 // pickOne(cry, rage);
@@ -256,18 +255,17 @@ function pickOne (f1,f2) {
 // const double = multiply(2);
 // const halve = multiplyBy(.5);
 
-
-function makeBetweenFunc (x,y) {
-    return function (num) {
-        return num >= x && num <= y;
-    }
+function makeBetweenFunc(x, y) {
+  return function (num) {
+    return num >= x && num <= y;
+  };
 }
 
-const isChild = makeBetweenFunc(0,18);
+const isChild = makeBetweenFunc(0, 18);
 
 const isInNineties = makeBetweenFunc(1990, 1999);
 
-const isNiceWeather = makeBetweenFunc (60,79);
+const isNiceWeather = makeBetweenFunc(60, 79);
 
 // CALLBACKS
 
@@ -279,13 +277,12 @@ const isNiceWeather = makeBetweenFunc (60,79);
 //     alert("WELCOME!");
 // }, 5000);
 
+const btn = document.querySelector("button");
+btn.addEventListener("click", function () {
+  alert("WHY DID U CLICK ME!");
+});
 
-const btn = document.querySelector('button');
-btn.addEventListener('click', function() {
-    alert("WHY DID U CLICK ME!")
-})
-
-// HOISTING 
+// HOISTING
 
 // console.log(animal);
 // var animal = 'YALK'
@@ -299,7 +296,6 @@ btn.addEventListener('click', function() {
 //     console.log("AWoooooo")
 // }
 
-
 // hoot()
 // let hoot = function () {
 //     console.log("Hoo hooo")
@@ -310,4 +306,58 @@ btn.addEventListener('click', function() {
 //     console.log("Hoo hooo")
 // }
 
+// ARROW FUNCTIONS
 
+const square = function(x) {
+    return x * x;
+}
+
+let squared = (x) => {
+  return x * x;
+};
+
+const isEven = (num) => {
+  return num % 2 === 0;
+};
+
+const multiply = (x, y) => {
+  return x * y;
+};
+
+// IMPLICIT RETURNS
+
+// "Regular" arrow function:
+const square = (n) => {
+  return n * n;
+};
+// Implicit Return, on multiple lines using parens
+const square1 = (n) => n * n;
+
+// Implicit return one-liner:
+const square2 = (n) => n * n;
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// ALL THREE VERSIONS GIVE US THE SAME RESULT:
+const doubles1 = nums.map(function (n) {
+  return n * 2;
+});
+
+const doubles2 = nums.map((n) => {
+  return n * 2;
+});
+
+const doubles3 = nums.map((n) => n * 2);
+
+const parityList = nums.map(function (n) {
+  if (n % 2 === 0) return "even";
+  return "odd";
+});
+
+const parityList1 = nums.map((n) => {
+  if (n % 2 === 0) return "even";
+  return "odd";
+});
+const parityList2 = nums.map((n) => (n % 2 === 0 ? "even" : "odd"));
+
+const parityList3 = nums.map((n) => (n % 2 === 0 ? "even" : "odd"));
