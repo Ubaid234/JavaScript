@@ -56,5 +56,14 @@ function under50(num){
 
 val = numbers.find(under50);
 
-console.log(numbers);
-console.log(val);
+// console.log(numbers);
+// console.log(val);
+
+
+// forEach() 
+
+const nams = [20,21,22,23,24,25,26,27,28];
+
+nams.forEach(function(nam){
+  console.log( nam * 2 );
+});
