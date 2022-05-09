@@ -87,6 +87,8 @@ const bigNums = nums.filter(n => n > 50);
 
 // SOME & EVERY
 
+// EVERY
+
 const words = ['dog','dig', 'log', 'bag', 'wag'];
 
 const all3Lets = words.every(word => word.length === 3);
@@ -95,4 +97,8 @@ const all3Endings = words.every(word => {
   const last = words.length - 1;
   return word[last] === 'g'
 })
+
+// SOME
+
+const someStartWithD = words.some(word => word[0] === 'd');
 
