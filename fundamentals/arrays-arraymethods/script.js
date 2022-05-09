@@ -85,5 +85,14 @@ const evens = nums.filter(n => n % 2 === 0);
 
 const bigNums = nums.filter(n => n > 50);
 
+// SOME & EVERY
 
+const words = ['dog','dig', 'log', 'bag', 'wag'];
+
+const all3Lets = words.every(word => word.length === 3);
+
+const all3Endings = words.every(word => {
+  const last = words.length - 1;
+  return word[last] === 'g'
+})
 
