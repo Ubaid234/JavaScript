@@ -39,12 +39,12 @@ val = numbers.concat(numbers2);
 val = fruit.sort();
 // val = numbers.sort();
 
-// // Use the "compare function"
+//  Use the "compare function"
 // val = numbers.sort(function(x, y){
 //   return x - y;
 // });
 
-// // Reverse sort
+//  Reverse sort
 // val = numbers.sort(function(x, y){
 //   return y - x;
 // });
@@ -102,3 +102,13 @@ const all3Endings = words.every(word => {
 
 const someStartWithD = words.some(word => word[0] === 'd');
 
+
+// Revisting sorts 
+
+const prices = [400.50, 3000, 99.99, 35.99, 12.00,9500];
+
+prices.sort();
+
+const badSort = prices.slice().sort();
+const ascSort = prices.slice().sort((a,b) => a - b);
+const descSort = prices.sort((a,b) => b - a);
