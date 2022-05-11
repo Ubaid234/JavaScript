@@ -112,3 +112,23 @@ prices.sort();
 const badSort = prices.slice().sort();
 const ascSort = prices.slice().sort((a,b) => a - b);
 const descSort = prices.sort((a,b) => b - a);
+
+// REDUCE 
+
+const first = [3,4,5,6,7];
+const product = first.reduce((total , currentVal) =>{
+  return total * currentVal;
+})
+
+// total                currentVal
+// 3                        4
+// 12                       5
+// 60                       6
+// 360                      7
+
+// 2520
+
+
+
+
+
