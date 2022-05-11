@@ -128,6 +128,27 @@ const product = first.reduce((total , currentVal) =>{
 
 // 2520
 
+// Finding the max grade.
+const grades = [87,64,96,88,99,73,70,64];
+
+// const maxGrades = grades.reduce((max, currVal) => {
+//   if (currVal > max ) return currVal;
+//   return max;
+// });
+
+const maxGrades = grades.reduce((max,currVal) => {
+      return Math.max(max , currVal)
+});
+
+const minGrades = grades.reduce((min,currVal) => {
+      return Math.min(min , currVal)
+})
+
+
+
+
+
+
 
 
 
