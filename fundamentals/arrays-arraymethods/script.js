@@ -145,6 +145,11 @@ const minGrades = grades.reduce((min,currVal) => {
 })
 
 
+// Initializing a value
+const second = [10, 20, 30, 40, 50].reduce((sum, currVal) => {
+  return sum + currVal;
+}, 1000);
+
 
 
 
