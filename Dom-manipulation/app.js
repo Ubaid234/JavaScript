@@ -17,6 +17,7 @@ console.log(document.querySelector('.guess').value);
 
 // Handling Click Elements
 // Implementing the Game Logic
+// Manipulating CSS Styles
 
 
 const secretNumber = Math.trunc(Math.random() * 20 + 1);
@@ -35,6 +36,10 @@ document.querySelector('.check').addEventListener('click', function() {
     // When Player Wins
     else if ( guess === secretNumber) {
         document.querySelector('.message').textContent = '🎉 Correct Number!';
+
+        document.querySelector('body').style.backgroundColor = '#60b347';
+
+        document.querySelector('.number').style.width = '30rem'; 
     } 
     // When guess is too high 
     else if (guess > secretNumber) {
