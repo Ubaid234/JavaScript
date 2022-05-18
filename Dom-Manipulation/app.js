@@ -22,3 +22,6 @@ allLis.forEach((li, i) => {
     const color = colors[i];
     li.style.color = color; 
 })
+
+// Learnt about getComputedStyle 
+
