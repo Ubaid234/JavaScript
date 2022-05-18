@@ -14,14 +14,32 @@ for (let li of allLis) {
 
 // Altering Styles
 
-const allLis = document.querySelectorAll('li');
+// const allLis = document.querySelectorAll('li');
 
-const colors = ['red','orange','yellow','green','blue','purple'];
+// const colors = ['red','orange','yellow','green','blue','purple'];
 
-allLis.forEach((li, i) => {
-    const color = colors[i];
-    li.style.color = color; 
-})
+// allLis.forEach((li, i) => {
+//     const color = colors[i];
+//     li.style.color = color; 
+// })
 
 // Learnt about getComputedStyle 
+// Maniputing classes
 
+const todo = document.querySelector('#todos  .todo');
+
+
+/*
+
+todo.style.color = 'gray';
+todo.style.textDecoration = 'line-through'; 
+todo.style.opacity = '50%'
+
+
+*/
+
+// Learned About checkList in console
+
+
+
+ 
