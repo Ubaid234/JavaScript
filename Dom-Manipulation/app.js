@@ -41,5 +41,16 @@ todo.style.opacity = '50%'
 // Learned About checkList in console
 
 
+// Creating an element
+const newImg = document.createElement('img')
+newImg.src = 'https://images.unsplash.com/photo-1653256464939-d13e40b6089c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000'
+newImg.style.width = '300px'
 
- 
+document.body.appendChild(newImg);
+
+const newLink = document.createElement('a');
+newLink.innerText = 'Mr, Bubz Video ! CLICK MEE';
+newLink.href = 'https://www.youtube.com/watch?v=ihUQ3ZE4kB8' 
+
+const firstP = document.querySelector('p')
+firstP.appendChild(newLink)
